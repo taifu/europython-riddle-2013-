@@ -1,0 +1,16 @@
+{% extends "riddle/base.html" %}
+{% load staticfiles %}
+{% block title %}EuroPython 2013 Riddle{% endblock %}
+{% block content %}
+<p>Dear Riddler, here are the rules:</p>
+    <p>1) There are three riddles to solve;</p>
+    <p>2) After solving the last one, you will be prompted for your email address;</p>
+    <p>3) The order of email submission will determine the winners;</p>
+    <p>4) No time limit.</p>
+{% endblock %}
+{% block warning %}
+<p>Good Luck! :)</p>
+<p>Ready... Set... <a href="/go">Go!</a></p>
+<br/>
+<small><font color="red">Please: don't ask anything :)</font></small>
+{% endblock %}

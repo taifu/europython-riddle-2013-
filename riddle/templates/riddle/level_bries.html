@@ -1,0 +1,16 @@
+{% extends "riddle/base.html" %}
+{% load staticfiles %}
+{% block title %}Agar Man{% endblock %}
+{% block content %}
+<p>How many <font color="red">empty bries</font> are there?</p>
+<form method="post"><input name="answer"{% if default %} value="{{default}}"{% endif %}></form>
+<p>{{ answer }}</p>
+<img width="640" src="{% static "images/there.jpg" %}"><br>
+{% endblock %}
+{% block warning %}
+<small>Each attempt is logged, so brute force is banned :)</small>
+
+<!-- more than 1000 attempts is brute forcing :) -->
+
+<!-- Agar Man... strgane tilte, isn't it? -->
+{% endblock %}

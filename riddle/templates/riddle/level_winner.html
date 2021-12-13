@@ -1,0 +1,9 @@
+{% extends "riddle/base.html" %}
+{% load staticfiles %}
+{% block title %}The end{% endblock %}
+{% block content %}
+<p>BRAVO! :)</p>
+<p>Your email?</p>
+<form method="post"><input name="email"{% if default %} value="{{default}}"{% endif %}></form>
+<p>{{ answer }}</p>
+{% endblock %}

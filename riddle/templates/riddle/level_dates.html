@@ -1,0 +1,9 @@
+{% extends "riddle/base.html" %}
+{% load staticfiles %}
+{% block title %}Seconds out{% endblock %}
+{% block content %}
+<p><font color="red">{{ date1 }}</font> and <font color="red">{{ date2 }}</font></p>
+<p>How many seconds elapsed?</p>
+<form method="post"><input name="answer"{% if default %} value="{{default}}"{% endif %}></form>
+<p>{{ answer|safe }}</p>
+{% endblock %}
